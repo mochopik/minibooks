@@ -1,0 +1,11 @@
+<h1>Welcome</h1>
+<p1>Welcome to MiniStory v0.0.1</p1>
+<p>Lets Share your mini stories here. Let other people read it or make it your personal private stories</p>
+
+{{#if user}}
+
+{{else}}
+    <a href="/auth/google" class="btn red darken-1">
+        <i class="fa fa-google left"></i> Login with google
+    </a>
+{{/if}}
