@@ -14,6 +14,7 @@ require('./config/passport')(passport);
 
 // Load Router
 const index = require('./routes/index');
+const stories = require('./routes/stories');
 const auth = require('./routes/auth');
 const keys = require('./config/keys');
 
@@ -50,6 +51,7 @@ app.use((req, res, next) => {
 // Use Routes
 app.use('/', index);
 app.use('/auth', auth);
+app.use('/stories', stories);
 
 // Static public directory
 app.use(express.static(path.join(__dirname, 'public')));

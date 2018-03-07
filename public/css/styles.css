@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Ubuntu+Condensed');
+
+nav .brand-logo {
+    font-family: 'Permanent Marker', cursive; 
+}
 
 body {
-    font-family: 'Gloria Hallelujah', cursive; 
-}
+    font-family: 'Ubuntu Condensed', sans-serif; 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
