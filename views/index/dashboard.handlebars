@@ -21,7 +21,8 @@
                             <i class="fa fa-pencil-square-o"></i> Edit
                         </a>
 
-                        <form action="/stories/{{id}}" method="POST" id="delete-form">
+                        <form onclick="Materialize.toast('I am a toast', 4000)" action="/stories/{{id}}?_method=DELETE" method="POST" id="delete-form">
+                            <input type="hidden" name="_method" value="DELETE">
                             <button class="btn red" type="submit"><i class="fa fa-trash-o"></i> Delete</button> 
                         </form>
                     </td>
