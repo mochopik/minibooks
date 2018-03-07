@@ -4,6 +4,10 @@ nav .brand-logo {
     font-family: 'Permanent Marker', cursive; 
 }
 
+.nav-wrapper .fa-bars{
+    font-size: 25px;
+}
+
 body {
     font-family: 'Ubuntu Condensed', sans-serif; 
     display: flex;
@@ -13,4 +17,8 @@ body {
 
   main {
     flex: 1 0 auto;
+  }
+
+  footer {
+      margin-top: 20px;
   }
