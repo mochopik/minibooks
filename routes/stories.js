@@ -1,4 +1,5 @@
 const express = require('express');
+const {ensureAuthenticated} = require('../helpers/auth');
 
 const router = express.Router();
 
@@ -8,7 +9,7 @@ router.get('/', (req, res) => {
 });
 
 // Add Story form
-router.get('/add', (req, res) => {
+router.get('/add',ensureAuthenticated, (req, res) => {
     res.render('stories/add');
 });
 
