@@ -21,5 +21,18 @@ module.exports = {
         return options.fn(this).replace(new RegExp(' value=\"'+ selected + '\"'),
          '$&selected="selected"').replace(new RegExp ('>' + selected + '</options>'),
           'selected="selected"$&');
+    },
+    editIcon: function(storyUser, loggedUser, storyId, floating = true) {
+        if(storyUser === loggedUser) {
+            if(floating) {
+                return `<a href="/stories/edit/${storyId}"
+                class="btn-floating halfway-fab red"><i class="fa fa-pencil-square-o"></i></a>`;
+            } else {
+                return `<a href="/stories/edit/${storyId}">
+                <i class="fa fa-pencil-square-o"></i></a>`; 
+            }
+        } else {
+            return '';
+        }
     }
 };
